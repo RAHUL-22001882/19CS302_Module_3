@@ -1,56 +1,39 @@
+
 # EX 12 C program to check whether the given number is prime or not using function without return type and with arguments.
-## DATE:11/05/2025
 ## AIM:
 To write a C program to check whether the given number is prime or not using function without return type and with arguments.
 
 ## Algorithm
-1. Start the program.
-2. Take input of an integer number n from the user.
-3. Create a function that takes n as an argument and checks whether it is prime.
-4. Inside the function, use a loop to check if n is divisible by any number from 2 to √n.
-5. Print whether the number is prime or not and end the program.
-
+1. Start 
+2. Declare the variable i. 
+3. Read the value given using scanf. 
+4. Check whether the given number is prime or not using if-else statement condition. 
+5. If true,print ("%d is a prime number.",i). 
+6. If false, print ("%d is not a prime number.",i). 
+7. End.
+   
 ## Program:
 ```
-/*
-C program to check whether the given number is prime or not using function without return type and with arguments.
-Developed by: AKILA P
-RegisterNumber:  212222060012
-
-#include <stdio.h>
-
-void checkPrime(int n) {
-    int i, isPrime = 1;
-
-    if (n <= 1) {
-        printf("Not a prime number\n");
-        return;
-    }
-
-    for (i = 2; i * i <= n; i++) {
-        if (n % i == 0) {
-            isPrime = 0;
-            break;
-        }
-    }
-
-    if (isPrime)
-        printf("Prime number\n");
-    else
-        printf("Not a prime number\n");
-}
-
-int main() {
-    int num;
-    scanf("%d", &num);
-    checkPrime(num);
-    return 0;
-}
-*/
+#include<stdio.h> 
+int main() 
+{ 
+int i; 
+scanf("%d",&i); 
+if(i%2==1 && i%1==0) 
+{ 
+printf("%d is a prime number.",i); 
+ 
+} 
+else 
+{ 
+printf("%d is not a prime number.",i); 
+} 
+return 0; 
+} 
 ```
 
 ## Output:
-![444987182-2cd21e42-d2e0-49d0-923b-1f7141eabe33](https://github.com/user-attachments/assets/cb9f4b93-c2a5-4778-a4cc-2b5168f67890)
+![image](https://github.com/user-attachments/assets/8a30ffee-099f-4226-a72f-3d4ebe61c38b)
 
 
 
