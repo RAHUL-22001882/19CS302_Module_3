@@ -1,56 +1,47 @@
-# EX 12 C program to check whether the given number is prime or not using function without return type and with arguments.
-## DATE:11/05/2025
+
+# EX 13 To write a C program to read the elements and print only the odd elements in the 2D array.
 ## AIM:
-To write a C program to check whether the given number is prime or not using function without return type and with arguments.
+To write a C program to read the elements and print only the odd elements in the 2D array.
 
 ## Algorithm
-1. Start the program.
-2. Take input of an integer number n from the user.
-3. Create a function that takes n as an argument and checks whether it is prime.
-4. Inside the function, use a loop to check if n is divisible by any number from 2 to √n.
-5. Print whether the number is prime or not and end the program.
+1. Start. 
+2. Define a variables i,j,n,a. 
+3. Write program to find n x n matrix. 
+4. Read the value using scanf. 
+5. Ask the user to make an input 
+6. Print out the answer. 
+7. End.    
 
 ## Program:
 ```
-/*
-C program to check whether the given number is prime or not using function without return type and with arguments.
-Developed by: AKILA P
-RegisterNumber:  212222060012
-
-#include <stdio.h>
-
-void checkPrime(int n) {
-    int i, isPrime = 1;
-
-    if (n <= 1) {
-        printf("Not a prime number\n");
-        return;
-    }
-
-    for (i = 2; i * i <= n; i++) {
-        if (n % i == 0) {
-            isPrime = 0;
-            break;
-        }
-    }
-
-    if (isPrime)
-        printf("Prime number\n");
-    else
-        printf("Not a prime number\n");
+#include<stdio.h> 
+int main() 
+{ 
+int i,j,n,a[10][10]; 
+scanf("%d",&n); 
+for(i=0;i<n;i++) 
+{ 
+for(j=0;j<n;j++) 
+{ 
+scanf("%d",&a[i][j]); 
+} 
+}for(i=0;i<n;i++) 
+{ 
+for(j=0;j<=n;j++) 
+{ 
+if(a[i][j]%2==1) 
+{ 
+printf("a[%d][%d] is %d \n",i,j,a[i][j]); 
+} 
+} 
+printf("\n"); 
+} 
+return 0; 
 }
-
-int main() {
-    int num;
-    scanf("%d", &num);
-    checkPrime(num);
-    return 0;
-}
-*/
 ```
 
 ## Output:
-![444987182-2cd21e42-d2e0-49d0-923b-1f7141eabe33](https://github.com/user-attachments/assets/cb9f4b93-c2a5-4778-a4cc-2b5168f67890)
+![image](https://github.com/user-attachments/assets/b1d54ee8-86ef-4f68-93dd-b1a5e101f94b)
 
 
 
