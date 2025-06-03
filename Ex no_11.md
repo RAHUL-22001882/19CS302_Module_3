@@ -1,56 +1,46 @@
+
 # EX 11 C Program to convert a given decimal value to binary using function without arguments with return type.
-## DATE:11/05/2025
 ## AIM:
 To write a C Program to convert a given decimal value to binary using function without arguments with return type.
 
 ## Algorithm
-1. Start the program.
-2. Create a function with no arguments that reads a decimal number from the user.
-3. Inside the function, convert the number to binary using a loop and store the binary digits.
-4. Return 0 from the function after displaying the binary equivalent.
-5. Call the function from main() and end the program.  
+1. Start. 
+2. Declare a integer variable 
+3. Define a function named dectobin. 
+4. Return the integer. 
+5. Read the value using scanf. 
+6. Convert decimal to binary value. 
+7. Print the dectobin 
+8. End. 
 
 ## Program:
 ```
-/*
-Program to C Program to convert a given decimal value to binary using function without arguments with return type.
-Developed by: AKILA P
-RegisterNumber:  212222060012
+  #include<stdio.h> 
+  Int dectobin(int d){ 
+int bin =0,base=1,rem; 
+while(d>0) 
+{ 
+rem=d%2; 
+bin=bin+rem*base; 
+d=d/2; 
+base=base*10; 
+} 
+printf(" = %d in binary",bin); 
+return 0; 
+} 
+int main() 
+{ 
+int dec; 
+scanf("%d",&dec); 
+printf("%d in decimal",dec); 
+dectobin(dec); 
+return 0; 
+} 
 
-#include <stdio.h>
-
-int convertToBinary() {
-    int num, binary[32], i = 0;
-    scanf("%d", &num);
-
-    if(num == 0) {
-        printf("Binary: 0\n");
-        return 0;
-    }
-
-    while(num > 0) {
-        binary[i++] = num % 2;
-        num /= 2;
-    }
-
-    printf("Binary: ");
-    for(int j = i - 1; j >= 0; j--) {
-        printf("%d", binary[j]);
-    }
-    printf("\n");
-
-    return 0;
-}
-
-int main() {
-    convertToBinary();
-    return 0;
-}
-*/
 ```
 
 ## Output:
-![444986634-b691156d-ff67-44e5-b0fe-6acee15b9809](https://github.com/user-attachments/assets/8eac6873-db8f-409e-aa59-bb731e5a9d3c)
+![image](https://github.com/user-attachments/assets/2cc91549-e7aa-4431-ac3e-17cead304549)
 
 
 
